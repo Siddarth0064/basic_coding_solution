@@ -1,0 +1,5 @@
+
+   "customerName":"John",
+   "phoneNo":8989898999,
+  "address":{"city":"Seattle","pin":206206},
+  "contacts":[9999991234,9999991235,9999991236]
