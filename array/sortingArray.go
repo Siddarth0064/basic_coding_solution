@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"sort"
 	"time"
 )
 
@@ -15,7 +16,11 @@ func main() {
 	fmt.Println(array)
 	result := sorting(array)
 	fmt.Println(result)
-
+	arr2 := []int{1, 3, 2, 4, 5}
+	sort.Slice(arr2, func(i, j int) bool {
+		return arr2[i] < arr2[j]
+	})
+	fmt.Println(arr2, " by  using anonymous function")
 }
 func sorting(s []int) []int {
 	for i := 0; i < len(s)-1; i++ {
